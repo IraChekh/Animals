@@ -29,16 +29,7 @@
     align-items:center;
 }
 
-.link{
-    text-decoration: none;
-    font-size: 20px;
-}
 
-.link:hover{
-    text-decoration: underline;
-    text-decoration-thickness: 3px;
-    text-underline-offset: 5px;
-}
 
 /*Buttons*/
 .btn{
@@ -141,13 +132,13 @@
     justify-content: space-around;
 }
 
-.material-symbols-outlined{
+.material-symbols-outlined.arrow{
     font-size: 40px;
     background-color:#2a4c80;
     border-radius:20px;
 }
 /*Arrows*/
-.animals_section .material-symbols-outlined{
+.animals_section .material-symbols-outlined.arrow{
     padding: 5px 5px;
     border:none;
 }

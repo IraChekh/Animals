@@ -6,20 +6,29 @@
     <title>Animals</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
 </head>
 <body>
     <!--Navigation-->
     <header class="header">
         <h2 class="logo">Animals</h2>
             <nav class="nav">
-                <a class="link" href="#">Home</a>
-                <a class="link" href="#">News</a>
-                <a class="link" href="#">Facts</a>
-                <a class="link" href="#">Sections</a>
-                <a class="link" href="#">About us</a>
                 <button class="btn">Log in</button>
+                <div class="show_menu"><span class="material-symbols-outlined menu">menu</span></div>
             </nav>
     </header>
+
+    <div class="hidden_menu">
+        <span class="material-symbols-outlined close_menu">close</span>
+        <div class="hidden_menu_links">
+        <a class="link" href="#">Home</a>
+        <a class="link" href="#">News</a>
+        <a class="link" href="#">Facts</a>
+        <a class="link" href="#">Animals</a>
+        <a class="link" href="#">About us</a>
+        </div>
+        <button class="btn">Log in</button>
+    </div>
 
     <!--First section that we see-->
     <section class="main_section">
@@ -47,7 +56,7 @@
             <button class="btn">Learn more</button>
         </div>
         <div class="cards_items">
-            <button class="material-symbols-outlined">arrow_back</button>
+            <button class="material-symbols-outlined arrow">arrow_back</button>
             <div class="cards">
                 <div class="card">
                     <img src="./images/animals/bear.jpg" alt="bear" class="card_img">
@@ -70,7 +79,7 @@
                     <p class="card_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur aut provident ex veniam voluptates consectetur laudantium totam hic eaque neque.</p>
                 </div>
             </div>
-            <button class="material-symbols-outlined">arrow_forward</button>
+            <button class="material-symbols-outlined arrow">arrow_forward</button>
         </div>
     </section>
 
@@ -148,5 +157,6 @@
             <button class="btn"><img class="icon" src="./icons/Telegram.png" alt="Telegram"></button>
         </div>
     </footer>
+    <script src="./Menu.js"></script>
 </body>
 </html>

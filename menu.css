@@ -1,0 +1,45 @@
+.material-symbols-outlined.menu{
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.hidden_menu{
+    text-align: center;
+    position: fixed;
+    width: 350px;
+    height: 100vh;
+    background: rgba(10, 25, 50, 0.8);
+    backdrop-filter: blur(10px);
+    z-index: 10;
+    right: -350px;
+    transition: right 0.7s ease-out;
+}
+
+.hidden_menu .material-symbols-outlined{
+    padding-top:20px;
+    cursor: pointer;
+    font-size: 35px;
+}
+.hidden_menu .btn{
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.hidden_menu_links{
+    display: flex;
+    flex-direction: column;
+}
+
+.link{
+    text-decoration: none;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    margin: 10px 0;
+    transition: color 0.3s ease;
+}
+
+.link:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 5px;
+}
