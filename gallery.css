@@ -1,0 +1,53 @@
+.gallery_sec{
+    background-color:#384a6b;
+    padding: 20px 6%;
+}
+.gallery_grid{
+    position: relative;
+    display: flex;
+    width: 80%;
+    margin: 25px auto;
+}
+
+
+.gallery_grid .right{
+    right: 0;
+}
+.gallery_grid .left{
+    left: 0;
+}
+.right, .left{
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    padding: 15px;
+    top: 50%;
+    transform: translateY(50%);
+    margin-top: -50px;
+}
+
+
+.galery_img {
+  width: 80%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: transform 0.5s ease;
+  margin: 0 auto;
+  animation-name: slide;
+  animation-duration: 1.5s;
+}
+
+@keyframes slide{
+from{
+        transform: translateX(-10%);
+    }to{
+        transform: translateX(0);
+    }
+}
+
+
+
+.galery_img:hover {
+  transform: scale(1.05);
+}
