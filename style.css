@@ -125,12 +125,9 @@
     padding: 20px 6%;
 }
 
-.cards_items{
+.cards{
     margin: 25px 0;
     align-items:center;
-}
-
-.cards{
     display: flex;
     justify-content: space-around;
     transition: all 0.5s ease;

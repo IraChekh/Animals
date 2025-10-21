@@ -13,6 +13,10 @@ function currentSlide(n) {
 showSlides(slideIndex = n);
 }
 
+setInterval(function(){
+        nextSlide();
+    },5000);
+
 
 function showSlides(n) {
     let slides = document.getElementsByClassName("galery_img");
