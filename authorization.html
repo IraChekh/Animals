@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authorization</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+    <link rel="stylesheet" href="authStyle.css">
+</head>
+<body>
+    <a href="main.html" class="btn back"><span class="material-symbols-outlined">arrow_back</span>Back</a>
+    <div class="card">
+        <img class="card_img" src="./images/registrationForm/wild-jaguar-jungle.jpg" alt="Jaguar">
+        <div class="card_text">
+            <div class="singin_card">
+                <h1 class="title">Welcome back</h1>
+                <h2 class="text">Welcome back! Please enter your details.</h2>
+                <form class="singin_form">
+                    <div class="singin_box">
+                        <label class="name">Email</label><label class="mistake" id="singin_email_mistake" ></label>
+                        <input class="input" type="email" id="singin_email" placeholder="Enter your email">
+                    </div>
+                    <div class="singin_box">
+                        <label class="name">Password</label><label class="mistake" id="singin_password_mistake" ></label>
+                        <div class="password_block">
+                            <input class="input" type="password" id="singin_password" placeholder="Enter your password"> 
+                            <span class="material-symbols-outlined eye" id="singin_eye">visibility</span>
+                        </div>
+                    </div>
+                    <button class="btn submit" type="submit" id="singin_submit">Log in</button>
+                </form>
+            </div>
+            <div class="singup_card">
+                <form action="" class="singup_form">
+
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

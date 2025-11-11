@@ -39,6 +39,8 @@
     border: solid #fff;
     border-radius: 10px;
     z-index: 1;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .btn:hover{
@@ -62,8 +64,9 @@
 
 
 .main_section .btn{
-    margin-top: 15px;
+    margin-top: 30px;
     font-size: 30px;
+    display: inline-block;
 }
 
 .title{
