@@ -1,7 +1,7 @@
 *{
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    color:#F4D35E;
+    color:#FFD700;
 }
 
 body{
@@ -12,8 +12,8 @@ body{
     display: flex;
     position: absolute;
     background-color:#415a77af;
-    width: 60%;
-    height: 600px;
+    width: 75%;
+    height: 650px;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -22,15 +22,10 @@ body{
 
 
 .card_img{
-    width: 50%;
+    width: 45%;
     height: 100%;
     object-fit: cover;
     border-radius:20px 0 0 20px; 
-}
-
-
-.singup_card{
-    display: none;
 }
 
 .btn{
@@ -62,13 +57,11 @@ body{
     width: 55%;
 }
 
-.singin_card{
-    width: 80%;
-    position: absolute;
-    display: block;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
+
+.title{
+    font-size: 32px; 
+    font-weight: 700;
 }
 
 .text{
@@ -77,11 +70,8 @@ body{
     font-weight: 400;
 }
 
-.singin_form{
-    margin-top: 10px;
-}
 
-.singin_box{
+.box{
     margin-top: 15px;
     border:solid #f2c10e 2px;
     display: flex;
@@ -90,16 +80,29 @@ body{
     padding: 10px;
 }
 
+
 .name{
     font-size: 15px;
     margin-bottom: 5px;
 }
 
+.mistake{
+    color:#ec9494;
+    font-size: 15px;
+}
+
+
 .input{
     background-color:transparent;
     border:solid #f2c10e 2px;
     font-size: 16px;
+    margin-top: 3px;
     padding: 5px;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 5px 1px rgb(218, 218, 142);
 }
 
 .password_block{
@@ -119,4 +122,27 @@ body{
     color: yellow;
     font-size: 20px;
     line-height: 1;
+}
+
+.btn.submit{
+    padding: 10px 20px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color:transparent;
+    cursor: pointer;
+}
+
+.btn.submit:hover{
+    background-color:rgba(255, 255, 255, 0.3);
+}
+
+
+.singup_card{
+    width: 80%;
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

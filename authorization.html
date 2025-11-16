@@ -12,30 +12,42 @@
     <div class="card">
         <img class="card_img" src="./images/registrationForm/wild-jaguar-jungle.jpg" alt="Jaguar">
         <div class="card_text">
-            <div class="singin_card">
-                <h1 class="title">Welcome back</h1>
-                <h2 class="text">Welcome back! Please enter your details.</h2>
-                <form class="singin_form">
-                    <div class="singin_box">
-                        <label class="name">Email</label><label class="mistake" id="singin_email_mistake" ></label>
-                        <input class="input" type="email" id="singin_email" placeholder="Enter your email">
+            <div class="singup_card">
+                <div class="singup_form">
+                    <h1 class="title">Nice to meet you!</h1>
+                    <h2 class="text">Please enter your details.</h2>
+                    <div class="box">
+                        <label class="name">Name</label><span class="mistake" id="singup_firstName_mistake" ></span>
+                        <input class="input" type="text" id="singup_firstName" placeholder="Enter your name">
                     </div>
-                    <div class="singin_box">
-                        <label class="name">Password</label><label class="mistake" id="singin_password_mistake" ></label>
+                    <div class="box">
+                        <label class="name">Phone</label><span class="mistake" id="singup_phone_mistake" ></span>
+                        <input class="input" type="text" id="singup_phone" placeholder="Enter your phone number">
+                    </div>
+                    <div class="box">
+                        <label class="name">Email</label><span class="mistake" id="singup_email_mistake" ></span>
+                        <input class="input" type="email" id="singup_email" placeholder="Enter your email">
+                    </div>
+                    <div class="box">
+                        <label class="name">Password</label><span class="mistake" id="singup_password1_mistake" ></span>
                         <div class="password_block">
-                            <input class="input" type="password" id="singin_password" placeholder="Enter your password"> 
-                            <span class="material-symbols-outlined eye" id="singin_eye">visibility</span>
+                            <input class="input" type="password" id="singup_password1" placeholder="Enter your password"> 
+                            <span class="material-symbols-outlined eye" id="singup_eye1">visibility_off</span>
                         </div>
                     </div>
-                    <button class="btn submit" type="submit" id="singin_submit">Log in</button>
-                </form>
-            </div>
-            <div class="singup_card">
-                <form action="" class="singup_form">
-
-                </form>
+                    <div class="box">
+                        <label class="name">Repeat Password</label><span class="mistake" id="singup_password2_mistake" ></span>
+                        <div class="password_block">
+                            <input class="input" type="password" id="singup_password2" placeholder="Repeat password"> 
+                            <span class="material-symbols-outlined eye" id="singup_eye2">visibility_off</span>
+                        </div>
+                    </div>
+                    <button onclick="check_input('sing in')" class="btn submit" type="submit" id="singin_submit">Create</button>
+                </div>
             </div>
         </div>
     </div>
+    <script src="password.js"></script>
+    <script src="checkInput.js"></script>
 </body>
 </html>
