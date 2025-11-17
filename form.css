@@ -1,0 +1,60 @@
+.contact_us_section{
+    position: relative;
+    background-color:#263647;
+    padding: 20px 6%;
+}
+
+.contact_us_form{
+    max-width: 600px;
+    display: block;
+    margin: 0 auto;
+}
+
+.input_blocks{
+    display: block;
+}
+
+.input_block{
+    margin-top: 15px;
+}
+
+.required{
+    color:red;
+}
+
+.block_text{
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.block_input{
+    background-color:transparent;
+    font-size: 18px;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.mistake{
+    color:red;
+    padding-top: 2px;
+    font-size: 12px;
+    font-weight: 100;
+}
+
+.submit_btn{
+    background-color:transparent;
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+    border:solid #ccc 2px;
+    font-size: 20px;
+    padding: 10px 30px;
+    border-radius:20px;
+    cursor: pointer;
+}
+
+.submit_btn:hover{
+    background-color:rgba(255, 255, 255, 0.37);
+}

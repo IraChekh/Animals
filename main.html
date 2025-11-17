@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="menu.css">
     <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="form.css">
 </head>
 
 <body>
@@ -167,6 +168,41 @@
             <button class="material-symbols-outlined arrow btn right" onclick="nextSlide()">arrow_forward</button>
         </div>
     </section>
+
+    <section class="contact_us_section">
+        <div class="section_title_box">
+            <h2 class="section_title">Contact us</h2>
+        </div>
+        <form class="contact_us_form" onsubmit="return check_input()">
+            <div class="input_block">
+                <h2 class="block_text">First name<span class="required">*</span></h2>
+                <input type="text" id="first_name" class="block_input" name="first_name">
+                <h6 class="mistake" id="first_name_mistake"></h6>
+            </div>
+            <div class="input_block">
+                <h2 class="block_text">Last name<span class="required">*</span></h2>
+                <input type="text" id="last_name" class="block_input" name="last_name">
+                <h6 class="mistake" id="last_name_mistake"></h6>
+            </div>
+            <div class="input_block">
+                <h2 class="block_text">Phone<span class="required">*</span></h2>
+                <input type="text" id="phone" class="block_input" name="phone">
+                <h6 class="mistake" id="phone_mistake"></h6>
+            </div>
+            <div class="input_block">
+                <h2 class="block_text">Email<span class="required">*</span></h2>
+                <input type="text" id="email" class="block_input" name="email">
+                <h6 class="mistake" id="email_mistake"></h6>
+            </div>
+            <div class="input_block">
+                <h2 class="block_text">Comments<span class="required">*</span></h2>
+                <textarea class="block_input" name="comment" id="comment"></textarea>
+                <h6 class="mistake" id="comment_mistake"></h6>
+            </div>
+            <button class="submit_btn" type="submit">Send</button>
+        </form>
+    </section>
+
     <!--Footer-->
     <footer class="footer_section">
         <h2 class="logo">Animals</h2>
@@ -185,6 +221,7 @@
     </footer>
     <script src="./Menu.js" defer></script>
     <script src="./Slider.js" defer></script>
+    <script src="checkInput.js"></script>
 </body>
 
 </html>
