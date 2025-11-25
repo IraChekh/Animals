@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="menu.css">
     <link rel="stylesheet" href="gallery.css">
     <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="comment.css">
 </head>
 
 <body>
@@ -17,10 +18,41 @@
     <header class="header">
         <h2 class="logo">Animals</h2>
         <nav class="nav">
-            <a class="btn" href="authorization.html">Log in</a>
+            <a class="btn" href="">Log in</a>
             <div class="show_menu"><span class="material-symbols-outlined menu">menu</span></div>
         </nav>
     </header>
+    <a class="material-symbols-outlined open_button" id="open_button" href="#open">comment</a>
+    <div class="modal" id = "modal">
+        <div class="modal_content">
+            <span class="material-symbols-outlined close_button" id="close_modal">close</span>
+            <h1 class="modal_title">Comment</h1>
+            <form class="contact_us_form" onsubmit="return check_input()">
+                <div class="input_block">
+                    <input type="text" id="first_name" class="block_input" placeholder="First name*" name="first_name">
+                    <h6 class="mistake" id="first_name_mistake">mis</h6>
+                </div>
+                <div class="input_block">
+                    <input type="text" id="last_name" class="block_input" name="last_name" placeholder="Last name*">
+                    <h6 class="mistake" id="last_name_mistake">mis</h6>
+                </div>
+                <div class="input_block">
+                    <input type="text" id="phone" class="block_input" name="phone" placeholder="Phone*">
+                    <h6 class="mistake" id="phone_mistake">mis</h6>
+                </div>
+                <div class="input_block">
+                    <input type="text" id="email" class="block_input" name="email" placeholder="Email*">
+                    <h6 class="mistake" id="email_mistake">mis</h6>
+                </div>
+                <div class="input_block">
+                    <textarea class="block_input" name="comment" id="comment" placeholder="Comment*"></textarea>
+                    <h6 class="mistake" id="comment_mistake">mis</h6>
+                </div>
+                <button class="submit_btn" type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+
 
     <div class="hidden_menu">
         <span class="material-symbols-outlined close_menu">close</span>
@@ -31,14 +63,15 @@
             <a class="link" href="#">Animals</a>
             <a class="link" href="#">About us</a>
         </div>
-        <a class="btn" href="authorization.html">Log in</a>
+        <a class="btn" href="">Log in</a>
     </div>
+
 
     <!--First section that we see-->
     <section class="main_section">
         <div class="text_box">
             <h1 class="title">Discover the World of Animals</h1>
-            <a class="btn" href="authorization.html">Log in</a>
+            <a class="btn" href="">Log in</a>
         </div>
     </section>
 
@@ -168,7 +201,7 @@
             <button class="material-symbols-outlined arrow btn right" onclick="nextSlide()">arrow_forward</button>
         </div>
     </section>
-
+    <!--
     <section class="contact_us_section">
         <div class="section_title_box">
             <h2 class="section_title">Contact us</h2>
@@ -202,7 +235,7 @@
             <button class="submit_btn" type="submit">Send</button>
         </form>
     </section>
-
+-->
     <!--Footer-->
     <footer class="footer_section">
         <h2 class="logo">Animals</h2>
@@ -222,6 +255,7 @@
     <script src="./Menu.js" defer></script>
     <script src="./Slider.js" defer></script>
     <script src="checkInput.js"></script>
+    <script src="modal_window.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,71 @@
+.open_button{
+    display: block;
+    position: fixed;
+    right: 30px;
+    bottom: 20px;
+    z-index: 1;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: rgb(78, 133, 182);
+    border: solid rgba(255, 255, 255, 0.478) 2px;
+    font-size: 25px;
+    cursor: pointer;
+    text-decoration: none
+}
+
+.open_button:hover{
+    background-color: rgb(160, 181, 200);
+}
+
+.close_modal{
+    display: none;
+}
+
+.modal{
+    width: 30%;
+    height: 520px;
+    position: fixed;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background-color:rgb(33, 69, 122);
+    text-align: center;
+    border-radius:20px;
+    border:solid rgba(255, 255, 255, 0.086) 1px;
+    
+}
+
+.open_modal{
+    display: block;
+}
+
+
+.modal_content{
+    position: relative;
+}
+
+
+
+.close_button{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    color:rgba(255, 255, 255, 0.348);
+}
+
+.close_button:hover{
+    color:white;
+}
+
+.modal_title{
+    padding-top: 20px;
+    text-align: center;
+}
+
+.body_block {
+    overflow: hidden;
+}
