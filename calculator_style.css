@@ -40,7 +40,7 @@ body{
 .calc_section{
     background-color:rgba(255, 255, 255, 0.197);
     min-height: 500px;
-    width: 78%;
+    width: 73%;
     margin: 30px auto;
     padding: 20px;
 }
@@ -59,26 +59,24 @@ body{
 }
 
 .forms{
-    margin-top: 15px;
+    margin:20px;
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px;
 }
 
-.pet{
-    display: flex;
-    width: 80%;
-    border:solid white 2px;
-    border-radius:20px;
-    padding: 25px;
-    margin: 0 auto;
-}
 
 .pet_form{
-    width: 50%;
+    width: 300px;
     display: flex;
     flex-direction: column;
-    
+    border:solid rgba(255, 255, 255, 0.293) 2px;
+    border-radius:10px;
+    padding: 15px;
 }
 
 .form_lable{
+    text-transform: capitalize;
     font-size: 18px;
     color: rgba(255, 255, 255, 0.664);
     padding-top: 5px;
@@ -95,16 +93,8 @@ body{
     border-radius:5px;
     padding: 5px;
     font-size: 18px;
-    width: 80%;
 }
 
-.form_btn{
-    display: block;
-    width: 40%;
-    margin-left: 20%;
-    margin-top: 15px;
-    font-size: 18px;
-}
 
 
 
