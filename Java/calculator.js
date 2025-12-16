@@ -145,8 +145,8 @@ class Calculator {
                 return false;
             }
 
-            if (isNaN(weight) || weight < 0.1) {
-                alert("Weight " + i + " can't be less than 100 grams");
+            if (isNaN(weight) || weight < 0.001) {
+                alert("Weight " + i + " can't be less than 1 gram");
                 return false;
             }
         }
