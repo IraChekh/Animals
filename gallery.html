@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
     <link rel="stylesheet" href="gallery_style.css">
 </head>
+
 <body>
     <div id="loader" class="spinner"></div>
     <header class="header">
@@ -13,11 +15,25 @@
     </header>
     <section class="photos_section">
         <h1 class="Title">Gallery</h1>
-        <div class="photos" id = "photos">
-
-        </div>
+        <p><img class="LargeImg" id="LargeImg" src="./images/gallery/img1.jpg" alt="Large image"></p>
+        <ul class="photos" id="photos">
+        </ul>
 
     </section>
     <script src="gallery.js"></script>
+    <script>
+        let photos =document.getElementById("photos")
+        photos.onclick = function (event) {
+            let neara = event.target.closest('a');
+            if (!neara) return;
+            showPicture(neara.href)
+            event.preventDefault();
+        }
+        function showPicture(href) {
+            LargeImg.src = href;
+        }
+
+    </script>
 </body>
+
 </html>

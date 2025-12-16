@@ -60,9 +60,17 @@ body{
     padding-bottom: 10px;
 }
 
+li{
+    list-style-type: none; 
+    padding: 0;            
+    margin: 0;  
+    height: 200px;
+}
+
 .picture{
     display: block;
     width: 300px;
+    height: 100%;
     object-fit: cover;
     border-radius:10px
 }
@@ -87,4 +95,13 @@ body{
 
 .hidden{
     display: none;
+}
+
+.LargeImg{
+    display: block;
+    width: 60%;
+    object-fit: cover;
+    border-radius:10px;
+    margin: 20px auto;
+    height: 300px;
 }
