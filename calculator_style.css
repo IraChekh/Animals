@@ -21,7 +21,7 @@ body{
     background-color: transparent;
     border: solid #fff;
     border-radius: 10px;
-    z-index: 1;
+    z-index: 3;
     cursor: pointer;
     text-decoration: none;
 }
@@ -43,6 +43,7 @@ body{
     width: 73%;
     margin: 30px auto;
     padding: 20px;
+    position: relative;
 }
 
 .section_header{
@@ -73,13 +74,14 @@ body{
     border:solid rgba(255, 255, 255, 0.293) 2px;
     border-radius:10px;
     padding: 15px;
+    margin-bottom: 40px;
 }
 
 .form_lable{
     text-transform: capitalize;
     font-size: 18px;
     color: rgba(255, 255, 255, 0.664);
-    padding-top: 5px;
+    padding-top: 10px;
     user-select: none;
 }
 .form_lable:first-child{
@@ -87,7 +89,7 @@ body{
 }
 
 .form_input{
-    padding-top: 2px;
+    padding-top: 5px;
     background-color:transparent;
     border:solid rgba(255, 255, 255, 0.293) 2px;
     border-radius:5px;
@@ -96,8 +98,69 @@ body{
 }
 
 
+.form_input option {
+  background-color: #333;
+  color: #fff;
+}
+
+.count_btn{
+    position: absolute;
+    bottom: 20px;
+    right: 250px;
+}
+
+.del_btn{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
 
 
+/*Modal window*/
+.modal_window{
+    display: block;
+    position: fixed;
+    width: 30%;
+    height: 520px;
+    background-color:#1d335da3;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border:solid rgba(255, 255, 255, 0.882) 1px;
+    z-index: 10;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.animal_title{
+    text-align: center;
+}
+
+.animal_pets{
+    display: flex;
+    flex-direction: column;
+    gap:10px
+}
+
+.animal_result{
+    text-align: right;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.close_window{
+    display: none;
+}
+
+.close_button{
+    position: fixed;
+    cursor: pointer;
+    right: 10px;
+    top: 10px;
+}
 
 /*Footer*/
 .footer_section{
