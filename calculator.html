@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+    <link rel="stylesheet" href="calculator_style.css">
+</head>
+
+<body>
+    <header class="header">
+        <a class="logo" href="main.html">Animals</a>
+    </header>
+
+    <div class="modal_window close_window" id = modal_list>
+        <span class="material-symbols-outlined close_button" id="close_modal">close</span>
+        <h2 class="animal_title">Cats</h2>
+        <div class="animal_pets" id="cats">
+        </div>
+        <div class="animal_result" id="total_result_cats">
+        </div>
+        <h2 class="animal_title">Dogs</h2>
+        <div class="animal_pets" id = "dogs">
+        </div>
+        <div class="animal_result" id="total_result_dogs">
+        </div>
+        <h2 class="animal_title">Parrot</h2>
+        <div class="animal_pets" id = "parrots">
+        </div>
+        <div class="animal_result" id="total_result_parrots">
+        </div>
+        <h2 class="animal_title">Hamster</h2>
+        <div class="animal_pets" id = "hamsters">
+        </div>
+        <div class="animal_result" id="total_result_hamsters">
+
+        </div>
+    </div>
+
+    <section class="calc_section">
+        <div class="section_header">
+            <h1 class="calc_title">Pet food calculator</h1>
+            <button class="btn calc_btn" id="add_pet">Add pet</button>
+        </div>
+        <div class="forms" id="forms">
+        </div>
+        <button class="btn calc_btn count_btn" id="calculate_button">Calculate</button>
+        <button class="btn calc_btn del_btn" id="resetForm">Delete forms</button>
+    </section>
+
+    <footer class="footer_section">
+        <a class="logo" href="main.html">Animals</a>
+        <div class="links">
+            <a class="link" href="#">Home</a>
+            <a class="link" href="#">News</a>
+            <a class="link" href="#">Facts</a>
+            <a class="link" href="#">Sections</a>
+            <a class="link" href="#">About us</a>
+        </div>
+        <div class="social_media">
+            <button class="btn"><img class="icon" src="./icons/Facebook.png" alt="Facebook"></button>
+            <button class="btn"><img class="icon" src="./icons/instagram.png" alt="Instagram"></button>
+            <button class="btn"><img class="icon" src="./icons/Telegram.png" alt="Telegram"></button>
+        </div>
+    </footer>
+    <script src="Java/calculator.js"></script>
+    <script src="Java/calculator_modal_window.js"></script>
+</body>
+
+</html>

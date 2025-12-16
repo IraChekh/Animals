@@ -1,4 +1,4 @@
-const TIME = 30000
+const TIME = 10000
 
 let open_button = document.getElementById("open_button");
 let modal = document.getElementById("modal");
@@ -24,9 +24,6 @@ function close_modal() {
 
 document.addEventListener('DOMContentLoaded', () => {
     setTimeout(open_modal, TIME);
-});
-document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') close_modal();
 });
 
 document.addEventListener('click', (e) => {

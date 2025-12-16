@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color:white;
+}
+body{
+    background-color: #2c4985;
+}
+
+.header{
+    padding: 15px 6%;
+    background-color:rgba(255, 255, 255, 0.207);
+    width: 88%;
+    align-items:center;
+    z-index: 10;
+}
+
+.btn{
+    padding: 8px 35px 8px 35px;
+    color: #fff;
+    background-color: transparent;
+    border: solid #fff;
+    border-radius: 10px;
+    z-index: 3;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn:hover{
+    background-color:#ffffff64;
+}
+
+.logo{
+    font-size: 26px;
+    font-weight: 700;
+    user-select: none;
+    text-decoration: none;
+}
+
+.calc_section{
+    background-color:rgba(255, 255, 255, 0.197);
+    min-height: 500px;
+    width: 73%;
+    margin: 30px auto;
+    padding: 20px;
+    position: relative;
+}
+
+.section_header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.calc_title{
+    font-size: 30px;
+}
+
+.calc_btn{
+    font-size: 20px;
+}
+
+.forms{
+    margin:20px;
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px;
+}
+
+
+.pet_form{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    border:solid rgba(255, 255, 255, 0.293) 2px;
+    border-radius:10px;
+    padding: 15px;
+    margin-bottom: 40px;
+}
+
+.form_lable{
+    text-transform: capitalize;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.664);
+    padding-top: 10px;
+    user-select: none;
+}
+.form_lable:first-child{
+    padding-top: 0;
+}
+
+.form_input{
+    padding-top: 5px;
+    background-color:transparent;
+    border:solid rgba(255, 255, 255, 0.293) 2px;
+    border-radius:5px;
+    padding: 5px;
+    font-size: 18px;
+}
+
+
+.form_input option {
+  background-color: #333;
+  color: #fff;
+}
+
+.count_btn{
+    position: absolute;
+    bottom: 20px;
+    right: 250px;
+}
+
+.del_btn{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+
+/*Modal window*/
+.modal_window{
+    display: block;
+    position: fixed;
+    width: 30%;
+    height: 520px;
+    background-color:#1d335da3;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border:solid rgba(255, 255, 255, 0.882) 1px;
+    z-index: 10;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.animal_title{
+    text-align: center;
+}
+
+.animal_pets{
+    display: flex;
+    flex-direction: column;
+    gap:10px
+}
+
+.animal_result{
+    text-align: right;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.close_window{
+    display: none;
+}
+
+.close_button{
+    position: fixed;
+    cursor: pointer;
+    right: 10px;
+    top: 10px;
+}
+
+/*Footer*/
+.footer_section{
+    background-color:#101f32;
+    align-items:center;
+    padding:20px 6%;
+    display: flex;
+    justify-content: space-between;
+}
+.link{
+    text-decoration: none;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    margin: 10px 0;
+    transition: color 0.3s ease;
+}
+
+.link:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 5px;
+}
+
+.links{
+
+    display: flex;
+    gap: 30px;
+}
+
+.footer_text{
+    font-size: 16px;
+    width: 30%;
+}
+
+.social_media{
+    display: flex;
+    gap: 30px;
+}
+
+.social_media .btn{
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    border:none;
+}
+
+.icon{
+    height: 100%;
+}
