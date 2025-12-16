@@ -101,8 +101,8 @@ class Calculator {
         let getWeight = document.getElementById('weight' + i).value;
         let RER = 70 * (getWeight ** (0.75));
         let DER = RER * this.getProportion(i)
-        let wet = DER / this.caloricContent['Wet_food']
-        let dry = DER / this.caloricContent['Dry_food']
+        let wet = DER / this.getCalories(i,'wet')
+        let dry = DER / this.getCalories(i,'dry')
         let pet = this.showPet(i, wet, dry)
         return [wet, dry, pet]
     }
@@ -128,6 +128,11 @@ class Calculator {
         let getType = document.getElementById('type' + i).value;
         let getActivity = document.getElementById('activity' + i).value;
         return this.activityProportion[getType][getActivity]
+    }
+
+    getCalories(i,food_type){
+        let getType = document.getElementById('type' + i).value;
+        return this.caloricContent[getType][food_type];
     }
 
     checkInput() {
@@ -158,8 +163,10 @@ const activityProportion = {
 }
 
 const caloricContent = {
-    'Dry_food': 4,
-    'Wet_food': 0.85
+    'cat': { 'wet': 0.9, 'dry': 3.75 },
+    'dog': { 'wet': 1, 'dry': 3.5 },
+    'parrot': { 'wet': 0.6, 'dry': 3.5 },
+    'hamster': { 'wet': 3.1, 'dry': 0.5 }
 }
 
 const calc = new Calculator(activityProportion, caloricContent);
